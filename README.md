@@ -8,7 +8,7 @@ For more information see the [Darknet project website](http://pjreddie.com/darkn
 For questions or issues please use the [Google Group](https://groups.google.com/forum/#!forum/darknet).
 
 ##################################################################################################
-##################################################################################################
+---------------------------------------------------------------------------------------------------
 
 
 We explored YOLO/DarkNet for identifying and localising malignant tumours from breast mammograms, using the original DDSM dataset. Some tips + tricks for using DarkNet are below
@@ -51,7 +51,7 @@ Transferring files from EC2 instance to local machine (works in the opposite dir
 
 scp -i ec2key.pem username@ec2ip:/path/to/file ./target_dir/
 
-#RESULTS
+RESULTS
 ---------
 
 We evaluated the results on a hold-out set by computing 'intersection over union' (IOU); a script for generating this is included.
