@@ -7,8 +7,8 @@ For more information see the [Darknet project website](http://pjreddie.com/darkn
 
 For questions or issues please use the [Google Group](https://groups.google.com/forum/#!forum/darknet).
 
-##################################################################################################
----------------------------------------------------------------------------------------------------
+############################################################
+---------------------------------------------------------
 
 
 We explored YOLO/DarkNet for identifying and localising malignant tumours from breast mammograms, using the original DDSM dataset. Some tips + tricks for using DarkNet are below
