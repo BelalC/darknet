@@ -43,13 +43,13 @@ Useful commands
 
 Predicting bounding boxes using saved weights:
 
-./darknet detector valid cfg/obj.data cfg/yolo-obj.cfg backup/run_1_cancers_only/yolo-obj_10000.weights
+`./darknet detector valid cfg/obj.data cfg/yolo-obj.cfg backup/run_1_cancers_only/yolo-obj_10000.weights`
 
 This outputs bounding box co-ordinates into a text file (named by default as 'comp4_det_test_cancer.txt' but this can be changed) stored under 'results'
 
 Transferring files from EC2 instance to local machine (works in the opposite direction too, by switching source and target)
 
-scp -i ec2key.pem username@ec2ip:/path/to/file ./target_dir/
+'scp -i ec2key.pem username@ec2ip:/path/to/file ./target_dir/'
 
 RESULTS
 ---------
@@ -58,30 +58,32 @@ We evaluated the results on a hold-out set by computing 'intersection over union
 
 IOU results for network trained with input images being re-sized to 416x416, but tested at different scales:
 
-test image input size: 416,416
-mean       0.049828
-std        0.141468
-min        0.000000
-max        0.887157
+1. test image input size: 416,416
+  mean       0.049828  
+  std        0.141468  
+  min        0.000000  
+  max        0.887157  
 
-test image input size: 832,832
-mean       0.049828
-std        0.141468
-min        0.000000
-max        0.887157
+2. test image input size: 832,832
+  mean       0.049828  
+  std        0.141468  
+  min        0.000000  
+  max        0.887157  
 
-test image input size: 1244,1244
-mean       0.043643
-std        0.153892
-min        0.000000
-max        0.999996
+3. test image input size: 1244,1244
+  mean       0.043643  
+  std        0.153892  
+  min        0.000000  
+  max        0.999996  
 
 
 Useful links + tutorials
 -------------------------
 
 Google threads for YOLO/DarkNet: https://groups.google.com/forum/#!searchin/darknet/get$20bounding$20box%7Csort:relevance/darknet/au4B7aTSofE/jWktLKhmEQAJ
-YOLO TensorFlow implementation: https://github.com/johnwlambert/YoloTensorFlow229
+
+YOLO TensorFlow implementation: 
+https://github.com/johnwlambert/YoloTensorFlow229
 
 ---------
 authors: 
