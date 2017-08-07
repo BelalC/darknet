@@ -49,7 +49,7 @@ This outputs bounding box co-ordinates into a text file (named by default as 'co
 
 Transferring files from EC2 instance to local machine (works in the opposite direction too, by switching source and target)
 
-'scp -i ec2key.pem username@ec2ip:/path/to/file ./target_dir/'
+`scp -i ec2key.pem username@ec2ip:/path/to/file ./target_dir/`
 
 RESULTS
 ---------
@@ -58,19 +58,19 @@ We evaluated the results on a hold-out set by computing 'intersection over union
 
 IOU results for network trained with input images being re-sized to 416x416, but tested at different scales:
 
-1. test image input size: 416,416
+test image input size: 416,416  
   mean       0.049828  
   std        0.141468  
   min        0.000000  
   max        0.887157  
 
-2. test image input size: 832,832
+test image input size: 832,832  
   mean       0.049828  
   std        0.141468  
   min        0.000000  
   max        0.887157  
 
-3. test image input size: 1244,1244
+test image input size: 1244,1244  
   mean       0.043643  
   std        0.153892  
   min        0.000000  
