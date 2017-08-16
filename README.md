@@ -65,11 +65,12 @@ We evaluated the results on a hold-out set by computing 'intersection over union
 
 IOU results for network trained with input images being re-sized to 416x416, but tested at different scales:
 
-test image input size: 416,416  
-  mean       0.049828  
-  std        0.141468  
-  min        0.000000  
-  max        0.887157  
+*test image input size: 416,416*    
+
+| **mean**|  0.049828  |  
+| **std** |  0.141468  |   
+| **min** |  0.000000  |  
+| **max** |  0.887157  |  
 
 test image input size: 832,832  
   mean       0.049828  
