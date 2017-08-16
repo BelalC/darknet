@@ -38,6 +38,11 @@ TRAIN-TEST split
 
 TO COME
 
+
+TRAINING (+ tutorials)
+----------------
+... link
+
 Useful commands
 ---------------
 
@@ -50,6 +55,8 @@ This outputs bounding box co-ordinates into a text file (named by default as 'co
 Transferring files from EC2 instance to local machine (works in the opposite direction too, by switching source and target)
 
 `scp -i ec2key.pem username@ec2ip:/path/to/file ./target_dir/`
+
+GNU screen...
 
 RESULTS
 ---------
