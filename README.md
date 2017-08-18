@@ -18,7 +18,7 @@ Tutorials
 
 There a number of really good tutorials on training DarkNet from scratch, including labelling data in the correct format and parametr tuning considersations. These tutorials are what we used to get started, and are listed below. 
 
-https://pjreddie.com/darknet/
+https://pjreddie.com/darknet/  
 https://timebutt.github.io/static/how-to-train-yolov2-to-detect-custom-objects/
 
 
@@ -41,7 +41,9 @@ We used the raw unprocessed DDSM dataset. This is accessible on the GliaLab S3 b
 
 The following scripts may be useful for you:
 
-*glia_scripts/rewritecsv.py* - Reads file names and bounding box coordinates, converts them to YOLO format and writes them back to a file. Assumes the original files has the format: TO COME
+*glia_scripts/rewritecsv.py* - Reads file names and bounding box coordinates, converts them to YOLO format and writes them back to a file. Assumes the original files has the format: 
+
+*image_name,tumor_location_x,tumor_location_y,tumor_radius,x_min,x_max,y_min,y_max*
 
 *glia_scripts/transfer_files.py* - Transfer jpeg files to a different folder
 
@@ -57,7 +59,11 @@ We must explicitly define train.txt and test.txt files with the names of train/t
 TRAINING
 ----------------
 
-See tutorials! 
+See tutorials for in-depth explanation! 
+
+Training command: 
+
+`darknet.exe detector train cfg/obj.data cfg/yolo-obj.cfg darknet19_448.conv.23`
 
 We attempted training at different scales. This is achieved by altering the width and height arguments in the .cfg file.
 
