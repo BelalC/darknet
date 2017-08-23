@@ -92,18 +92,14 @@ We evaluated the results on a hold-out set by computing 'intersection over union
 | **min** |  0.000000  |  
 | **max** |  0.887157  |  
 
-*test image input size: 832,832  -  UPDATE!*  
-| **mean**|  0.049828  |  
-| **std** |  0.141468  |   
-| **min** |  0.000000  |  
-| **max** |  0.887157  | 
-
-*test image input size: 1244,1244 *  
+*test image input size: 1244,1244*  
 | **mean**|  0.043643  |  
 | **std** |  0.153892  |   
 | **min** |  0.000000  |  
 | **max** |  0.999996  | 
   
+The weights for this model are also available within the `glia_scripts/backups` folder
+
 Useful commands
 ---------------
 
