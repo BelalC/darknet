@@ -39,6 +39,10 @@ Data prep
 
 We used the raw unprocessed DDSM dataset. This is accessible on the GliaLab S3 bucket: 'fulldataset/imagesOnePlay/cancers/'
 
+YOLO requires images and a text file with bounding box details associated with each image on a new line. The text file has the following format:
+
+[category number] [object center in X] [object center in Y] [object width in X] [object width in Y]
+
 The following scripts may be useful for you:
 
 *glia_scripts/rewritecsv.py* - Reads file names and bounding box coordinates, converts them to YOLO format and writes them back to a file. Assumes the original files has the format: 
